@@ -80,6 +80,33 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Repository Links Styling */
+.repo-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.repo-links a {
+    display: block;
+    padding: 12px 24px;
+    background-color: #43a047;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    min-width: 250px;
+    text-align: center;
+}
+
+.repo-links a:hover {
+    background-color: #2e7d32;
+    text-decoration: none;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .project img {

@@ -1,0 +1,270 @@
+/* Resume Stylesheet - Black and White */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px 50px;
+    border: 1px solid #000000;
+}
+
+/* Header Section */
+.resume-header {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 25px;
+}
+
+.resume-header h1 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.contact-info {
+    font-size: 0.95em;
+    color: #000000;
+}
+
+.contact-info a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 25px;
+}
+
+.resume-section h2 {
+    font-size: 1.1em;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.resume-section p {
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+/* Education Items */
+.education-item {
+    margin-bottom: 15px;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.edu-header h3 {
+    font-size: 1.05em;
+    color: #000000;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.degree {
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 2px;
+    font-size: 0.95em;
+}
+
+.gpa {
+    color: #000000;
+    font-size: 0.9em;
+}
+
+.location-date {
+    text-align: right;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+.location-date p {
+    margin: 0;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.skill-category h4 {
+    color: #000000;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.skill-category p {
+    color: #000000;
+    line-height: 1.4;
+    font-size: 0.9em;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    color: #000000;
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.project-item ul {
+    margin-left: 20px;
+}
+
+.project-item li {
+    margin-bottom: 3px;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+/* Experience Items */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.exp-header h3 {
+    font-size: 1.05em;
+    color: #000000;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.company {
+    font-style: italic;
+    color: #000000;
+    font-size: 0.95em;
+}
+
+.experience-item ul {
+    margin-left: 20px;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+/* Lists */
+.resume-section > ul {
+    margin-left: 20px;
+}
+
+.resume-section > ul > li {
+    margin-bottom: 3px;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+/* Footer Buttons */
+.resume-footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #000000;
+    text-align: center;
+}
+
+.download-btn, .back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.download-btn:hover, .back-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    .resume-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .edu-header, .exp-header {
+        flex-direction: column;
+    }
+    
+    .location-date {
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .download-btn, .back-btn {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .container {
+        border: none;
+        box-shadow: none;
+    }
+    
+    .resume-footer {
+        display: none;
+    }
+}
